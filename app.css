@@ -1,6 +1,9 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .console, .editor {
@@ -8,12 +11,19 @@ html, body {
   width: 50%;
   height: 100%;
   top: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+  font-size: 16px;
 }
 
 .console {
-  background-color: #4D5043;
+  background-color: #272822;
   left: 50%;
-  color: white;
+  padding: 8px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border-left: 1px solid #6C6F5D;
+  color: #fff;
+  margin: 0;
 }
 
  #editor { 
@@ -28,5 +38,15 @@ html, body {
   position: absolute;
   z-index: 100;
   bottom: 0;
-  right: 50%;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.controls button {
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 25%;
+  font-family: 'Menlo';
+  font-size: 12px;
 }
