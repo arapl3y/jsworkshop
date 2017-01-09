@@ -12,26 +12,27 @@ html, body {
   height: 100%;
   top: 0;
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
-  font-size: 16px;
+  font-size: 18px !important;
 }
 
 .console {
-  background-color: #272822;
+  background-color: #383932;
   left: 50%;
   padding: 8px;
   word-wrap: break-word;
   white-space: pre-wrap;
-  border-left: 1px solid #6C6F5D;
   color: #fff;
   margin: 0;
 }
 
- #editor { 
+ #editor {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+  font-size: 16px !important;
 }
 
 .controls {
@@ -43,10 +44,15 @@ html, body {
   cursor: pointer;
 }
 
-.controls button {
+.run {
   cursor: pointer;
-  padding: 2px 8px;
-  border-radius: 25%;
-  font-family: 'Menlo';
-  font-size: 12px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid grey;
+}
+
+.run:hover {
+  background: grey;
+  border: 1px solid grey;
 }
